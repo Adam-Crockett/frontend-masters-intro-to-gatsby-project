@@ -1,16 +1,13 @@
 import * as React from 'react'
 import {Link} from 'gatsby'
-import {Seo} from '../components/seo.js'
+import Layout from '../components/Layout.js'
 
  
 export default function AboutPage() {
     return (
-        <>
-        <Seo title="About This Site" description="More information about this site."/>
-        <main>
+        <Layout title="About This Site" description="More information about this site.">
             <h1>About This Site.</h1>
             <Link to="/">Back to Home</Link>
-        </main>
-        </>
+        </Layout>
     )
 }
