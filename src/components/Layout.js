@@ -6,7 +6,7 @@ import { header, content } from '../styles/layout.module.css'
 import '../styles/global.css'
 
 
-export default function Layout({ children, title = false, description = false, image = false, path = false }) {
+export default function Layout({children, title = false, description = false, image = false, path = false }) {
     const data = useStaticQuery(graphql`
     query getSiteTitle {
         site {
