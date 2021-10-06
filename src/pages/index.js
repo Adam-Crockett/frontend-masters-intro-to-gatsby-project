@@ -22,7 +22,7 @@ export default function IndexPage() {
         }
         allSanityEpisode(
             sort: {fields: date, order: DESC}
-            filter: {youtubeID: {ne: ""}}
+            filter: {youtubeID: {ne: "null"}}
             limit: 20
         ) {
             nodes {
