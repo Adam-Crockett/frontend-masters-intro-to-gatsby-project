@@ -26,7 +26,10 @@ export default function SanityEpisode({data}) {
     const episode = data.sanityEpisode
     return (
         <Layout title={episode.title} description={episode.description}>
+            {episode.image?.asset?.gatsbyImageData && (
+
             <GatsbyImage image={episode.image.asset.gatsbyImageData} alt={episode.title} />
+            )}
             <h1>{episode.title}</h1>
             <p>
                 (posted {episode.date}) - {episode.description}
