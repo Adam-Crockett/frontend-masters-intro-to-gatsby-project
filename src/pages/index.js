@@ -31,7 +31,7 @@ export default function IndexPage() {
                 guest {
                     name
                 }
-                gatsbyPath(filePath: "/episode/{sanityEpisode.slug__current}.js")
+                gatsbyPath(filePath: "/episode/{SanityEpisode.slug__current}")
             }
         }
     }`)
