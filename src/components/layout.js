@@ -8,7 +8,7 @@ import '../styles/global.css'
 //???
 export default function Layout({children, title = false, description = false, image = false, path = false }) {
     const data = useStaticQuery(graphql`
-    query getSiteTitle {
+    query GetSiteTitle {
         site {
           siteMetadata {
             title
